@@ -1,12 +1,10 @@
-# fix-dbt-time
+# yaml_to_xml
 
 ## Как установить зависимотсти
-
 
 Установить необходимые пакеты
 ```shell
 pip install -r requirements.txt
-pip install -r requirements-ci.txt
 ```
 
 Затем загрузить пакеты из pypy.flexline.ru
