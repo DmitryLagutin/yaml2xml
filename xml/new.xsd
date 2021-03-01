@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Файл" type="ФайлType"/>
+  <xs:complexType name="Г3Type">
+    <xs:sequence>
+      <xs:element type="xs:string" name="А4"/>
+      <xs:element type="xs:string" name="Б4"/>
+      <xs:element type="xs:string" name="В4"/>
+      <xs:element type="xs:string" name="Г4"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Б2Type">
+    <xs:sequence>
+      <xs:element type="xs:string" name="A3"/>
+      <xs:element type="xs:string" name="Б3"/>
+      <xs:element type="xs:string" name="В3"/>
+      <xs:element type="Г3Type" name="Г3"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ДокументType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="A2"/>
+      <xs:element type="Б2Type" name="Б2"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ФайлType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="А1"/>
+      <xs:element type="xs:string" name="Б1"/>
+      <xs:element type="xs:string" name="B1"/>
+      <xs:element type="xs:string" name="Г1"/>
+      <xs:element type="ДокументType" name="Документ"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
