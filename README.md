@@ -14,7 +14,7 @@ pip install -r requirements-fl.txt --extra-index-url=http://pypi.flexline.ru/sim
 
 ## Как запустить
 
-Для начала необходимо задать реквизиты доступа к API lanbilling. Для этого необходимо заполнить следующие переменные:
+Для для начала необходимо создать файл standard.yaml по пути yaml в проекте:
 ```yaml
 Файл:
   А1: "2121212121"
