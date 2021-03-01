@@ -15,15 +15,23 @@ pip install -r requirements-fl.txt --extra-index-url=http://pypi.flexline.ru/sim
 ## Как запустить
 
 Для начала необходимо задать реквизиты доступа к API lanbilling. Для этого необходимо заполнить следующие переменные:
-```bash
-DBI_SOAP = {
-    "login": os.getenv("DBI_SOAP_LOGIN", "fix-dbt-time"),
-    "pass": os.getenv("DBI_SOAP_PASSWORD", "CBhOlvoKXEkU3BFaXBBwjUAm"),
-    "service": os.getenv("DBI_SOAP_SERVICE",
-                         "http://dbt20.flexline.ru:34012"),
-    "wsdl": os.getenv("DBI_SOAP_WSDL",
-                      "http://dbt20.flexline.ru/admin/soap/api3.wsdl")
-}
+```yaml
+Файл:
+  А1: "2121212121"
+  Б1: '22.05.2001'
+  B1: '3232'
+  Г1: '080'
+  Документ:
+    - A2: '1124549845'
+      Б2:
+        A3: '57540534543'
+        Б3: '575325725432'
+        В3: '12289188534243'
+        Г3:
+          А4: '01'
+          Б4: '493849343984'
+          В4: '483949394838'
+          Г4: '21.02.2011'
 ```
 
 ## Алгоритм работы
