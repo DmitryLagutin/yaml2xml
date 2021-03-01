@@ -45,4 +45,9 @@ print(f'Создан xml файл по пути {path_xml}')
 
 После того как будет создан xml файл, средствами Pycharm сгенерируйте xsd файл (схему для валидации)
 ![image](https://user-images.githubusercontent.com/38376206/109461768-b4ea1700-7a73-11eb-9e2c-8da9e87477d5.png)
-
+После того как будет создана схема, появляется возможность запустить процесс валидации (main.py)
+```python
+# Валидация
+validate('xml/new.xsd', 'xml/new.xml')
+```
+![image](https://user-images.githubusercontent.com/38376206/109462200-2fb33200-7a74-11eb-8971-cf8adb42f0e4.png)
