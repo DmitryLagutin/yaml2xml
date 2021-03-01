@@ -30,7 +30,9 @@ pip install -r requirements.txt
 ```
 
 ## Алгоритм работы
-На основе standard.yaml будет фсормирован xml файл
+На основе standard.yaml будет сформирован xml файл
+
+Запустить main.py
 ```python
 # Введите путь yaml схемы
 path_yaml = 'yaml/standard.yaml'
@@ -40,3 +42,7 @@ xml_str = yaml_to_xml(path_yaml)
 make_file(path_xml, xml_str)
 print(f'Создан xml файл по пути {path_xml}')
 ```
+
+После того как будет создан xml файл, средствами Pycharm сгенерируйте xsd файл (схему для валидации)
+![image](https://user-images.githubusercontent.com/38376206/109461768-b4ea1700-7a73-11eb-9e2c-8da9e87477d5.png)
+
