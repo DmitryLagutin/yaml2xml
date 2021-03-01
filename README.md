@@ -7,11 +7,6 @@
 pip install -r requirements.txt
 ```
 
-Затем загрузить пакеты из pypy.flexline.ru
-```shell
-pip install -r requirements-fl.txt --extra-index-url=http://pypi.flexline.ru/simple --trusted-host=pypi.flexline.ru
-```
-
 ## Как запустить
 
 Для для начала необходимо создать файл standard.yaml по пути yaml в проекте:
